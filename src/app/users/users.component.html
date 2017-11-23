@@ -1,0 +1,33 @@
+ <div class="row">
+   <div class="col-md-10"><h1 class="heas">USERS</h1></div>
+  <div class="col-md-2"><a class="btn btn-primary heas1 " href="/Dashboard/Adduser">ADD User</a></div>
+</div>
+ 
+
+<!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let use of dataarray | async" [value]="use.name">
+           <span>{{ state.name }}</span> |
+        </mat-option> -->
+        <!-- </mat-autocomplete>
+    </mat-form-field>
+  
+</form>  --> 
+<div class="row">
+  <div class="col-md-10">
+<input class="hari" [(ngModel)]="searchtext" placeholder="enter the name of user to search"></div></div>
+
+<div class="card display"  *ngFor="let use of dataarray | filter : searchtext">
+    <div class="card-block">
+      <h4 class="card-title">{{use.name}}</h4><br>
+      <li class="card-text">{{use.phone}}</li><br>
+      <li class="card-text">{{use.email}}</li><br>
+      <button type="button" class="btn btn-primary" (click)="edituser(use.id)">Edit</button>
+      <button type="button" class="btn btn-primary" (click)="deleteuser(use.id)">Delete</button>
+    </div>
+  </div>
+
+
+  

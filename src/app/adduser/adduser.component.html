@@ -1,0 +1,48 @@
+<div class="container" *ngIf="!har">
+  <h2 class="dem">Add User</h2>
+  <form #form="ngForm" (ngSubmit)="addUser(user)" class="form-horizontal dems">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="email" [(ngModel)]="user.name" placeholder="Enter your Name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Email</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" [(ngModel)]="user.email" placeholder="Enter Email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" [(ngModel)]="user.password" placeholder="Enter password" name="password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Re-type Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Phone</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" [(ngModel)]="user.phone" placeholder="Enter phone" name="phone">
+      </div>
+    </div>
+   
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default bts">Submit</button>
+      </div>
+    </div>
+  </form>
+
+ 
+
+</div>
+
+<div *ngIf="har" class="result">
+  <h1>{{message}}</h1>
+</div>

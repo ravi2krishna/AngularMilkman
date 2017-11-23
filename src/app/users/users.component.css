@@ -1,0 +1,55 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 58px;
+    width: 30rem;
+    padding: 1%;
+    
+    /* margin-right: 2570px; */
+    
+    
+}
+.display{
+    float: left;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+.heas  {
+    font-family: "Courier New";
+
+    
+}
+.heas1  {
+    font-family: "Courier New";
+    margin-right: 40px;
+    margin-top: 24px;
+    font-size: 18px
+   
+    
+}
+
+.btns{
+
+}
+
+.hari {
+    padding: 7px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

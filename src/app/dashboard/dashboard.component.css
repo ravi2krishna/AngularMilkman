@@ -1,0 +1,79 @@
+.hcolor {
+   background-color: #f4c242;
+   margin-bottom: 0px;
+   
+}
+
+.text {
+    color: black;
+    font-family:"Comic Sans MS";
+    font-size: 29px;
+ 
+}
+
+.text2 {
+    color: black;
+    margin-top: 9px;
+    font-family:"Comic Sans MS";
+    font-size: 22px;
+  
+    display: inline-block;
+    
+ 
+}
+
+.size {
+    margin-left: 10px;
+    font-size: 16;
+}
+
+
+
+.menus {
+    margin-left: 46px;;
+    background-color:#35342f; 
+    border: 1px solid transparent;
+}
+
+.vertical-menu {
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+.vertical-menu a {
+    background-color: #b2b0a9;
+    
+    color: black;
+    display: block;
+    padding: 24px;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    width: 234px;
+}
+
+.vertical-menu a.active {
+    background-color: #b2b0a9;
+    color: black;
+}
+
+.imgs {
+    background-color: #b2b0a9;
+}
+
+.dem {
+ background-color: #b2b0a9;
+ height: 100vh !important;
+}
+.sidenav{
+    padding-bottom: 10%;
+}
